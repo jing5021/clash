@@ -2668,19 +2668,19 @@ rule-providers:
     path: "./ruleset/facebook.yaml"
     interval: 86400  
 rules:
-  - AND,((OR,((SRC-IP-CIDR,192.168.1.109), (SRC-IP-CIDR,192.168.1.137))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.84), (SRC-IP-CIDR,192.168.10.100))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.228), (SRC-IP-CIDR,192.168.10.211))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK2
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.228), (SRC-IP-CIDR,192.168.10.114))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK3
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.107), (SRC-IP-CIDR,192.168.10.115))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS1
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.206), (SRC-IP-CIDR,192.168.10.64))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS2
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.236), (SRC-IP-CIDR,192.168.10.212))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK4
+  - AND,((OR,((SRC-IP-CIDR,192.168.1.109/32), (SRC-IP-CIDR,192.168.1.137/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.84/32), (SRC-IP-CIDR,192.168.10.100/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.228/32), (SRC-IP-CIDR,192.168.10.211/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK2
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.228/32), (SRC-IP-CIDR,192.168.10.114/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK3
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.107/32), (SRC-IP-CIDR,192.168.10.115/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS1
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.206/32), (SRC-IP-CIDR,192.168.10.64/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS2
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.236/32), (SRC-IP-CIDR,192.168.10.212/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK4
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,tld-not-cn,PROXY
-  - RULE-SET,gfw,PROXY
-  - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,tld-not-cn, 🌐 Google
+  - RULE-SET,gfw, 🌐 Google
+  - RULE-SET,telegramcidr, 🌐 Google
   - MATCH,DIRECT
