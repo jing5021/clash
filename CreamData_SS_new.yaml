@@ -2658,14 +2658,14 @@ rule-providers:
   whatsapp:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Whatsapp/Whatsapp.yaml
-    path: "./ruleset/Whatsapp.yaml"
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Whatsapp/whatsapp.txt
+    path: "./ruleset/whatsapp.yaml"
     interval: 86400
   facebook:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Facebook/Facebook.yaml
-    path: "./ruleset/Facebook.yaml"
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Facebook/facebook.txt
+    path: "./ruleset/facebook.yaml"
     interval: 86400  
 rules:
   - AND,((OR,((SRC-IP-CIDR,192.168.1.109), (SRC-IP-CIDR,192.168.1.137))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
