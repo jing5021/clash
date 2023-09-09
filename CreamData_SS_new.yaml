@@ -2679,7 +2679,7 @@ rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
+  # - RULE-SET,reject,REJECT
   - RULE-SET,tld-not-cn, 🌐 Google
   - RULE-SET,gfw, 🌐 Google
   - RULE-SET,telegramcidr, 🌐 Google
