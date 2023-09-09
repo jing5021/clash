@@ -1055,7 +1055,7 @@ proxies:
     protocol: origin
 proxy-groups:
   - name: CreamData
-    type: select
+    type: url-test
     proxies:
       - Panel：www.creamdata.xyz
       - 🇭🇰 HK | 香港 01
@@ -1184,6 +1184,9 @@ proxy-groups:
       - 🇨🇭 CH | 瑞士 01
       - 🇸🇪 SE | 瑞典 01
       - 🇮🇪 IE | 爱尔兰 01
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
   - name: 📲 Telegram
     type: select
     proxies:
