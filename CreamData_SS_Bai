@@ -2659,13 +2659,13 @@ rule-providers:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/jing5021/clash@main/whatsapp.txt
-    path: "./ruleset/whatsapp.yaml"
+    path: "./rule_provider/whatsapp.yaml"
     interval: 86400
   facebook:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/jing5021/clash@main/facebook.txt
-    path: "./ruleset/facebook.yaml"
+    path: "./rule_provider/facebook.yaml"
     interval: 86400  
 rules:
   - AND,((OR,((SRC-IP-CIDR,192.168.1.109/32), (SRC-IP-CIDR,192.168.1.137/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
