@@ -2668,7 +2668,7 @@ rule-providers:
     path: "./rule_provider/facebook.yaml"
     interval: 86400  
 rules:
-  - AND,((OR,((SRC-IP-CIDR,192.168.1.109/32), (SRC-IP-CIDR,192.168.1.137/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.206/32), (SRC-IP-CIDR,192.168.8.17/32), (SRC-IP-CIDR,192.168.10.231/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
   - AND,((OR,((SRC-IP-CIDR,192.168.10.84/32), (SRC-IP-CIDR,192.168.10.100/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
   - AND,((OR,((SRC-IP-CIDR,192.168.10.228/32), (SRC-IP-CIDR,192.168.10.211/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK2
   - AND,((OR,((SRC-IP-CIDR,192.168.10.228/32), (SRC-IP-CIDR,192.168.10.114/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK3
