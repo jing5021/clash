@@ -1,6 +1,5 @@
 payload:
   - DOMAIN-SUFFIX,whatismyipaddress.com
-  - DOMAIN-SUFFIX,ipaddress.my
   - DOMAIN,graph.facebook.com
   - DOMAIN-SUFFIX,bintray.com
   - DOMAIN-SUFFIX,wa.me
