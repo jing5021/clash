@@ -2672,7 +2672,7 @@ rules:
   - AND,((OR,((SRC-IP-CIDR,192.168.8.26/32), (SRC-IP-CIDR,192.168.8.23/32), (SRC-IP-CIDR,192.168.8.12/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS2
   - AND,((OR,((SRC-IP-CIDR,192.168.11.14/32), (SRC-IP-CIDR,192.168.8.21/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK2
   - AND,((OR,((SRC-IP-CIDR,192.168.10.229/32), (SRC-IP-CIDR,192.168.10.100/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK3
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.20/32), (SRC-IP-CIDR,192.168.8.15/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.44/32), (SRC-IP-CIDR,192.168.8.15/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
   - AND,((OR,((SRC-IP-CIDR,192.168.8.37/32), (SRC-IP-CIDR,192.168.8.19/32), (SRC-IP-CIDR,192.168.8.24/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
   - AND,((OR,((SRC-IP-CIDR,192.168.10.251/32), (SRC-IP-CIDR,192.168.8.3/32), (SRC-IP-CIDR,192.168.8.13/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS5
   - AND,((OR,((SRC-IP-CIDR,192.168.8.36/32), (SRC-IP-CIDR,192.168.8.28/32), (SRC-IP-CIDR,192.168.8.30/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS6
@@ -2688,7 +2688,7 @@ rules:
     # - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
+    # - RULE-SET,google,DIRECT
   - RULE-SET,proxy, 🌐 Google
   - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
