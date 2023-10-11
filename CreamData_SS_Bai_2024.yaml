@@ -1,0 +1,2979 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+cfw-latency-url: http://www.gstatic.com/generate_204
+allow-lan: false
+mode: Rule
+log-level: info
+ipv6: false
+hosts:
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  default-nameserver:
+    - 119.29.29.29
+    - 8.8.8.8
+    - 1.1.1.1
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - stun.*.*
+    - stun.*.*.*
+    - swscan.apple.com
+    - mesu.apple.com
+    - music.163.com
+    - '*.music.163.com'
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - y.qq.com
+    - '*.y.qq.com'
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - localhost.ptlogin2.qq.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - '*.xiami.com'
+    - '*.music.migu.cn'
+    - music.migu.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - '*.*.*.srv.nintendo.net'
+    - '*.*.stun.playstation.net'
+    - xbox.*.*.microsoft.com
+    - '*.*.xboxlive.com'
+    - '*.ipv6.microsoft.com'
+    - teredo.*.*.*
+    - teredo.*.*
+    - speedtest.cros.wr.pvp.net
+    - +.jjvip8.com
+    - www.douyu.com
+    - activityapi.huya.com
+    - activityapi.huya.com.w.cdngslb.com
+    - www.bilibili.com
+    - api.bilibili.com
+    - a.w.bilicdn1.com
+external-controller: 127.0.0.1:9090
+clash-for-android:
+  append-system-dns: false
+cfw-bypass:
+  - qq.com
+  - music.163.com
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+cfw-latency-timeout: 5000
+proxies:
+  - name: Panel：www.creamdata.xyz
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28103"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28103"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28109"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28116"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 04
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28102"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 05
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28124"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 06
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28111"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 07
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28118"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 08
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28104"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 09
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28101"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 10
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28125"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 11
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28114"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 12
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28112"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 13
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28119"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 14
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28117"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 15
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28106"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 16
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28121"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 17
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28107"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 18
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28123"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 19
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28120"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 20
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28108"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 21
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28113"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 22
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28122"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 23
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28110"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 24
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28115"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇭🇰 HK | 香港 25
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28105"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28201"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28202"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28203"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 04
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28204"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 05
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28205"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 06
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28206"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 07
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28207"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 08
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28208"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 09
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28209"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 10
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28210"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 11
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28211"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 12
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28212"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 13
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28213"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 14
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28214"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 15
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28215"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 16
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28216"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 17
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28217"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 18
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28218"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇬 SG | 新加坡 19
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28219"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇵🇭 PH | 菲律宾 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28220"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇮🇩 ID | 印度尼西亚  01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28221"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇻🇳 VN | 越南 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28222"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇦🇺 AU | 澳大利亚 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28224"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇦🇺 AU | 澳大利亚 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28225"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇦🇺 AU | 澳大利亚 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28226"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇦🇺 AU | 澳大利亚 04
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28227"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇮🇳 IN | 印度 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28228"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇮🇳 IN | 印度 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28229"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇰🇷 KR | 韩国 01
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28230"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇰🇷 KR | 韩国 02
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28231"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇰🇷 KR | 韩国 03
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28232"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 01
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28301"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 02
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28302"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 03
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28303"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 04
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28304"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 05
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28305"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 06
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28306"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 07
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28307"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 08
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28308"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 09
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28309"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 10
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28310"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 11
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28311"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 12
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28312"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 13
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28313"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 14
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28314"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 15
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28315"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 16
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28316"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 17
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28317"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 18
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28318"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇯🇵 JP | 日本 19
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28319"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 01
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28401"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 02
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28402"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 03
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28403"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 04
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28404"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 05
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28405"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 06
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28406"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 07
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28407"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 08
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28408"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 09
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28409"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 10
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28410"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 11
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28411"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 12
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28412"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 13
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28413"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 14
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28414"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 15
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28415"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 16
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28416"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 17
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28417"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇸 US | 美国 18
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28418"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇦 CA | 加拿大 01
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28702"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇦 CA | 加拿大 02
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28703"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇦 CA | 加拿大 03
+    type: ss
+    server: 90ae72.qpbtwx.xyz
+    port: "28704"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇳 TW | 台湾 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28501"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇳 TW | 台湾 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28502"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇳 TW | 台湾 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28503"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇳 TW | 台湾 04
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28504"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇳 TW | 台湾 05
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28505"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇳 TW | 台湾 06
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28506"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇩🇪 DE | 德国 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28601"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇩🇪 DE | 德国 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28602"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇩🇪 DE | 德国 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28603"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇩🇪 DE | 德国 04
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28604"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇩🇪 DE | 德国 05
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28605"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28606"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28607"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28608"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 04
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28609"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 05
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28610"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 06
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28611"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇬🇧 UK | 英国 07
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28612"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇫🇷 FR | 法国 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28613"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇫🇷 FR | 法国 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28614"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇳🇱 NL | 荷兰 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28615"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇳🇱 NL | 荷兰 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28616"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇳🇱 NL | 荷兰 03
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28617"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇪🇸 ES | 西班牙 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28631"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇷🇺 RU | 俄罗斯 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28622"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇷🇺 RU | 俄罗斯 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28623"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇺🇦 UA | 乌克兰 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28630"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇹🇷 TR | 土耳其 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28624"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇹🇷 TR | 土耳其 02
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28625"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇳🇴 NO | 挪威 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28626"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇨🇭 CH | 瑞士 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28627"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇸🇪 SE | 瑞典 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28628"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+  - name: 🇮🇪 IE | 爱尔兰 01
+    type: ss
+    server: 45e755.shlswe.xyz
+    port: "28629"
+    cipher: aes-128-gcm
+    password: 7955740eb7
+    udp: true
+    protocol: origin
+proxy-groups:
+  - name: CreamData
+    type: select
+    proxies:
+      - ♻️ Auto
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: ♻️ Auto
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 🎬 Bilibili
+    type: select
+    proxies:
+      - DIRECT
+      - CreamData
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 🎵 Tiktok
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 📺 Disney
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 📺 Netflix
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 🌐 Google
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 🐹 OpenAI
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 🖥 Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - CreamData
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: 📺 International-Media
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+      - Panel：www.creamdata.xyz
+      - 🇭🇰 HK | 香港 01
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+      - 🇭🇰 HK | 香港 15
+      - 🇭🇰 HK | 香港 16
+      - 🇭🇰 HK | 香港 17
+      - 🇭🇰 HK | 香港 18
+      - 🇭🇰 HK | 香港 19
+      - 🇭🇰 HK | 香港 20
+      - 🇭🇰 HK | 香港 21
+      - 🇭🇰 HK | 香港 22
+      - 🇭🇰 HK | 香港 23
+      - 🇭🇰 HK | 香港 24
+      - 🇭🇰 HK | 香港 25
+      - 🇸🇬 SG | 新加坡 01
+      - 🇸🇬 SG | 新加坡 02
+      - 🇸🇬 SG | 新加坡 03
+      - 🇸🇬 SG | 新加坡 04
+      - 🇸🇬 SG | 新加坡 05
+      - 🇸🇬 SG | 新加坡 06
+      - 🇸🇬 SG | 新加坡 07
+      - 🇸🇬 SG | 新加坡 08
+      - 🇸🇬 SG | 新加坡 09
+      - 🇸🇬 SG | 新加坡 10
+      - 🇸🇬 SG | 新加坡 11
+      - 🇸🇬 SG | 新加坡 12
+      - 🇸🇬 SG | 新加坡 13
+      - 🇸🇬 SG | 新加坡 14
+      - 🇸🇬 SG | 新加坡 15
+      - 🇸🇬 SG | 新加坡 16
+      - 🇸🇬 SG | 新加坡 17
+      - 🇸🇬 SG | 新加坡 18
+      - 🇸🇬 SG | 新加坡 19
+      - 🇵🇭 PH | 菲律宾 01
+      - 🇮🇩 ID | 印度尼西亚  01
+      - 🇻🇳 VN | 越南 01
+      - 🇦🇺 AU | 澳大利亚 01
+      - 🇦🇺 AU | 澳大利亚 02
+      - 🇦🇺 AU | 澳大利亚 03
+      - 🇦🇺 AU | 澳大利亚 04
+      - 🇮🇳 IN | 印度 01
+      - 🇮🇳 IN | 印度 02
+      - 🇰🇷 KR | 韩国 01
+      - 🇰🇷 KR | 韩国 02
+      - 🇰🇷 KR | 韩国 03
+      - 🇯🇵 JP | 日本 01
+      - 🇯🇵 JP | 日本 02
+      - 🇯🇵 JP | 日本 03
+      - 🇯🇵 JP | 日本 04
+      - 🇯🇵 JP | 日本 05
+      - 🇯🇵 JP | 日本 06
+      - 🇯🇵 JP | 日本 07
+      - 🇯🇵 JP | 日本 08
+      - 🇯🇵 JP | 日本 09
+      - 🇯🇵 JP | 日本 10
+      - 🇯🇵 JP | 日本 11
+      - 🇯🇵 JP | 日本 12
+      - 🇯🇵 JP | 日本 13
+      - 🇯🇵 JP | 日本 14
+      - 🇯🇵 JP | 日本 15
+      - 🇯🇵 JP | 日本 16
+      - 🇯🇵 JP | 日本 17
+      - 🇯🇵 JP | 日本 18
+      - 🇯🇵 JP | 日本 19
+      - 🇺🇸 US | 美国 01
+      - 🇺🇸 US | 美国 02
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+      - 🇺🇸 US | 美国 12
+      - 🇺🇸 US | 美国 13
+      - 🇺🇸 US | 美国 14
+      - 🇺🇸 US | 美国 15
+      - 🇺🇸 US | 美国 16
+      - 🇺🇸 US | 美国 17
+      - 🇺🇸 US | 美国 18
+      - 🇨🇦 CA | 加拿大 01
+      - 🇨🇦 CA | 加拿大 02
+      - 🇨🇦 CA | 加拿大 03
+      - 🇨🇳 TW | 台湾 01
+      - 🇨🇳 TW | 台湾 02
+      - 🇨🇳 TW | 台湾 03
+      - 🇨🇳 TW | 台湾 04
+      - 🇨🇳 TW | 台湾 05
+      - 🇨🇳 TW | 台湾 06
+      - 🇩🇪 DE | 德国 01
+      - 🇩🇪 DE | 德国 02
+      - 🇩🇪 DE | 德国 03
+      - 🇩🇪 DE | 德国 04
+      - 🇩🇪 DE | 德国 05
+      - 🇬🇧 UK | 英国 01
+      - 🇬🇧 UK | 英国 02
+      - 🇬🇧 UK | 英国 03
+      - 🇬🇧 UK | 英国 04
+      - 🇬🇧 UK | 英国 05
+      - 🇬🇧 UK | 英国 06
+      - 🇬🇧 UK | 英国 07
+      - 🇫🇷 FR | 法国 01
+      - 🇫🇷 FR | 法国 02
+      - 🇳🇱 NL | 荷兰 01
+      - 🇳🇱 NL | 荷兰 02
+      - 🇳🇱 NL | 荷兰 03
+      - 🇪🇸 ES | 西班牙 01
+      - 🇷🇺 RU | 俄罗斯 01
+      - 🇷🇺 RU | 俄罗斯 02
+      - 🇺🇦 UA | 乌克兰 01
+      - 🇹🇷 TR | 土耳其 01
+      - 🇹🇷 TR | 土耳其 02
+      - 🇳🇴 NO | 挪威 01
+      - 🇨🇭 CH | 瑞士 01
+      - 🇸🇪 SE | 瑞典 01
+      - 🇮🇪 IE | 爱尔兰 01
+  - name: WhatsHK1
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 02
+      - 🇭🇰 HK | 香港 25
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK2
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 03
+      - 🇭🇰 HK | 香港 24
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK3
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 04
+      - 🇭🇰 HK | 香港 23
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK4
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 05
+      - 🇭🇰 HK | 香港 22
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK5
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 06
+      - 🇭🇰 HK | 香港 21
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK6
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 07
+      - 🇭🇰 HK | 香港 20
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK7
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 08
+      - 🇭🇰 HK | 香港 19
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK8
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 09
+      - 🇭🇰 HK | 香港 18
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK9
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 10
+      - 🇭🇰 HK | 香港 17
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK10
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 11
+      - 🇭🇰 HK | 香港 16
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK11
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 12
+      - 🇭🇰 HK | 香港 15
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsHK12
+    type: url-test
+    proxies:
+      - 🇭🇰 HK | 香港 13
+      - 🇭🇰 HK | 香港 14
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS1
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 03
+      - 🇺🇸 US | 美国 18
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS2
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 04
+      - 🇺🇸 US | 美国 17
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS3
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 05
+      - 🇺🇸 US | 美国 16
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+   
+  - name: WhatsUS4
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 15
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS5
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 07
+      - 🇺🇸 US | 美国 14
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS6
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 08
+      - 🇺🇸 US | 美国 13
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS7
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 09
+      - 🇺🇸 US | 美国 12
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: WhatsUS8
+    type: url-test
+    proxies:
+      - 🇺🇸 US | 美国 10
+      - 🇺🇸 US | 美国 11
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 86400
+    tolerance: 50
+    lazy: true
+  - name: China-Media
+    type: select
+    proxies:
+      - DIRECT
+      - CreamData
+  - name: Hijacking
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: China-Websites
+    type: select
+    proxies:
+      - DIRECT
+      - CreamData
+  - name: Final
+    type: select
+    proxies:
+      - CreamData
+      - DIRECT
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: "./rule_provider/reject.yaml"
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: "./rule_provider/icloud.yaml"
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: "./rule_provider/apple.yaml"
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    path: "./rule_provider/google.yaml"
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: "./rule_provider/proxy.yaml"
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: "./rule_provider/direct.yaml"
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: "./rule_provider/private.yaml"
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: "./rule_provider/gfw.yaml"
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: "./rule_provider/tld-not-cn.yaml"
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: "./rule_provider/telegramcidr.yaml"
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: "./rule_provider/cncidr.yaml"
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: "./rule_provider/lancidr.yaml"
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: "./rule_provider/applications.yaml"
+    interval: 86400
+  whatsapp:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/jing5021/clash@main/whatsapp.txt
+    path: "./rule_provider/whatsapp.yaml"
+    interval: 86400
+  facebook:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/jing5021/clash@main/facebook.txt
+    path: "./rule_provider/facebook.yaml"
+    interval: 86400  
+rules:
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.206/32), (SRC-IP-CIDR,192.168.10.231/32), (SRC-IP-CIDR,192.168.8.17/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS1
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.26/32), (SRC-IP-CIDR,192.168.8.23/32), (SRC-IP-CIDR,192.168.8.12/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS2
+  - AND,((OR,((SRC-IP-CIDR,192.168.11.14/32), (SRC-IP-CIDR,192.168.8.21/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK2
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.229/32), (SRC-IP-CIDR,192.168.10.100/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK3
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.44/32), (SRC-IP-CIDR,192.168.8.15/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.37/32), (SRC-IP-CIDR,192.168.8.19/32), (SRC-IP-CIDR,192.168.8.24/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.251/32), (SRC-IP-CIDR,192.168.8.3/32), (SRC-IP-CIDR,192.168.8.13/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS5
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.36/32), (SRC-IP-CIDR,192.168.8.28/32), (SRC-IP-CIDR,192.168.8.30/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS6
+  - AND,((OR,((SRC-IP-CIDR,192.168.11.21/32), (SRC-IP-CIDR,192.168.8.27/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS7
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.208/32), (SRC-IP-CIDR,192.168.8.11/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS8
+  - AND,((OR,((SRC-IP-CIDR,192.168.11.5/32), (SRC-IP-CIDR,192.168.8.16/32), (SRC-IP-CIDR,192.168.10.114/32), (SRC-IP-CIDR,192.168.10.211/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK4
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.18/32), (SRC-IP-CIDR,192.168.8.38/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK5
+  - AND,((OR,((SRC-IP-CIDR,192.168.8.39/32), (SRC-IP-CIDR,192.168.10.209/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK6
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+    # - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+    # - RULE-SET,google,DIRECT
+  - RULE-SET,proxy, 🌐 Google
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr, 🌐 Google
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH, Final
