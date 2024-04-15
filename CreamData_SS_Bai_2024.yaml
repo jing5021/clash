@@ -2955,7 +2955,7 @@ rules:
   - AND,((OR,((SRC-IP-CIDR,192.168.8.13/32), (SRC-IP-CIDR,192.168.8.28/32), (SRC-IP-CIDR,192.168.8.81/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS6
   - AND,((OR,((SRC-IP-CIDR,192.168.8.24/32), (SRC-IP-CIDR,192.168.8.54/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS7
   - AND,((OR,((SRC-IP-CIDR,192.168.8.56/32), (SRC-IP-CIDR,192.168.8.41/32), (SRC-IP-CIDR,192.168.8.80/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS3
-  - AND,((OR,((SRC-IP-CIDR,192.168.10.127/32), (SRC-IP-CIDR,192.168.8.28/32), (SRC-IP-CIDR,192.168.8.70/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS6
+  - AND,((OR,((SRC-IP-CIDR,192.168.10.127/32), (SRC-IP-CIDR,192.168.8.28/32), (SRC-IP-CIDR,192.168.8.70/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK2
   - AND,((OR,((SRC-IP-CIDR,192.168.11.5/32), (SRC-IP-CIDR,192.168.8.16/32), (SRC-IP-CIDR,192.168.10.114/32), (SRC-IP-CIDR,192.168.10.211/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsHK4
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
