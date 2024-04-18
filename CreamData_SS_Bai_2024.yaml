@@ -3715,7 +3715,7 @@ rule-providers:
 rules:
   - AND,((OR,((SRC-IP-CIDR,192.168.8.34/32), (SRC-IP-CIDR,192.168.8.79/32), (SRC-IP-CIDR,192.168.8.75/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS1
   - AND,((OR,((SRC-IP-CIDR,192.168.8.15/32), (SRC-IP-CIDR,192.168.8.83/32), (SRC-IP-CIDR,192.168.8.20/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS2
-  - AND,((OR,((SRC-IP-CIDR,192.168.8.77/32), (SRC-IP-CIDR,192.168.8.78/32), (SRC-IP-CIDR,192.168.8.82/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS4
+  - OR,((SRC-IP-CIDR,192.168.8.77/32), (SRC-IP-CIDR,192.168.8.78/32), (SRC-IP-CIDR,192.168.8.82/32)),WhatsUS4
   - AND,((OR,((SRC-IP-CIDR,192.168.10.211/32), (SRC-IP-CIDR,192.168.8.84/32), (SRC-IP-CIDR,192.168.8.79/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS5
   - AND,((OR,((SRC-IP-CIDR,192.168.8.13/32), (SRC-IP-CIDR,192.168.8.28/32), (SRC-IP-CIDR,192.168.8.81/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS6
   - AND,((OR,((SRC-IP-CIDR,192.168.8.24/32), (SRC-IP-CIDR,192.168.8.54/32))), (OR,((RULE-SET,whatsapp), (RULE-SET,facebook)))),WhatsUS7
