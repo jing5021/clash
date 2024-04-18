@@ -3440,7 +3440,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 86400
     tolerance: 50
-    lazy: true
   - name: WhatsHK5
     type: url-test
     proxies:
@@ -3525,7 +3524,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS1
     type: url-test
     proxies:
@@ -3536,7 +3534,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS2
     type: url-test
     proxies:
@@ -3547,7 +3544,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS3
     type: url-test
     proxies:
@@ -3558,18 +3554,16 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS4
     type: url-test
     proxies:
-      - 🇺🇸 US | 美国 06
-      - 🇺🇸 US | 美国 15
       - 🇺🇸 美国 08
       - 🇺🇸 美国 09
+      - 🇺🇸 US | 美国 06
+      - 🇺🇸 US | 美国 15
     url: 'http://www.gstatic.com/generate_204'
-    interval: 7200
+    interval: 14400
     tolerance: 50
-    lazy: true
   - name: WhatsUS5
     type: url-test
     proxies:
@@ -3580,7 +3574,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS6
     type: url-test
     proxies:
@@ -3591,7 +3584,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS7
     type: url-test
     proxies:
@@ -3601,7 +3593,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: WhatsUS8
     type: url-test
     proxies:
@@ -3610,7 +3601,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 7200
     tolerance: 50
-    lazy: true
   - name: China-Media
     type: select
     proxies:
